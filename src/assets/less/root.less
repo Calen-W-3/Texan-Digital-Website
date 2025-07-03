@@ -13,29 +13,29 @@
 @media only screen and (min-width: 0rem) {
     /* All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
     :root {
-        --primary: #ff6a3e;
-        --primaryLight: #ffba43;
-        --secondary: #ffba43;
-        --secondaryLight: #ffba43;
-        --headerColor: #1a1a1a;
-        --bodyTextColor: #4e4b66;
-        --bodyTextColorWhite: #fafbfc;
+        --primary: #1E47FF;              /* Bold electric blue */
+        --primaryLight: #4F6FFF;         /* Slightly lighter blue for hover/secondary CTAs */
+        --secondary: #64748B;            /* Slate gray – pairs well with blue */
+        --secondaryLight: #A0AEC0;       /* Light slate for subtle elements */
+        --headerColor: #111827;          /* Charcoal black – excellent for headings */
+        --bodyTextColor: #4B5563;        /* Dark gray – high readability */
+        --bodyTextColorWhite: #F9FAFB;   /* Light gray-white for dark backgrounds */
 
         /* Dark Mode Styles */
-        --dark: #082032;
-        --medium: #2c394b;
-        --accent: #334756;
+         --dark: #111827;                 /* Navy black – background */
+        --medium: #1E293B;               /* Dark slate – containers */
+        --accent: #3B82F6;               /* Lighter blue – for highlights or links */
 
         /* 13px - 16px */
         --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
         /* 31px - 49px */
         --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
-        --bodyFontSize: 1rem;
+        --bodyFontSize: 1.1rem;
         /* 60px - 100px top and bottom */
         --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 
-        --headerFont: "Roboto", Arial, sans-serif;
-        --bodyFont: "Roboto", Arial, sans-serif;
+        --headerFont: "League Spartan", Arial, sans-serif;
+        --bodyFont: "League Spartan", Arial, sans-serif;
     }
 
     html,
@@ -295,35 +295,39 @@
 
 /* Fonts */
 @media only screen and (min-width: 0rem) {
+
     // Grab your fonts to locally host from https://gwfh.mranftl.com/fonts
-    /* roboto-regular - latin */
+    /* league-spartan-regular - latin */
     @font-face {
+        font-display: swap;
+        /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'League Spartan';
         font-style: normal;
-        font-family: "Roboto";
         font-weight: 400;
-        font-display: swap;
-        src: local(""), url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"),
-            /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        src: url('../fonts/league-spartan-v14-latin-regular.woff2') format('woff2');
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
     }
 
-    /* roboto-700 - latin */
+    /* league-spartan-700 - latin */
     @font-face {
+        font-display: swap;
+        /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'League Spartan';
         font-style: normal;
-        font-family: "Roboto";
         font-weight: 700;
-        font-display: swap;
-        src: local(""), url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"),
-            /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        src: url('../fonts/league-spartan-v14-latin-700.woff2') format('woff2');
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
     }
 
-    /* roboto-900 - latin */
+    /* league-spartan-900 - latin */
     @font-face {
-        font-style: normal;
-        font-family: "Roboto";
-        font-weight: 900;
         font-display: swap;
-        src: local(""), url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"),
-            /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'League Spartan';
+        font-style: normal;
+        font-weight: 900;
+        src: url('../fonts/league-spartan-v14-latin-900.woff2') format('woff2');
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
     }
 }
 
