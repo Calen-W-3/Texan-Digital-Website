@@ -1,0 +1,187 @@
+---
+title: "Services | Texan Digital Designs"
+description: "Services Page"
+permalink: "/services/"
+image: "OPTIONAL - If an image path is specified here, it will be used for that page's OG image. Useful for blog posts (implemented as standard with this kit)"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+       <link rel="stylesheet" href="/assets/css/services.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Services</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/services/" class="cs-link cs-active">Services</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/houston-skyline2.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/houston-skyline2.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/houston-skyline2.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/houston-skyline2.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-282">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">Here's What We Provide</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <h3 class="cs-h3">Design And Development</h3>
+                    <p class="cs-item-text">
+                        We craft custom, responsive websites tailored to your brand and business goals. From initial concept to final launch, every detail is built with your audience in mind.
+                    </p>
+                    <span class="cs-fake-link">Read More
+                        <!--Svg Arrow-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_1_114)">
+                            <path d="M4.16667 10.8333H13.475L9.40833 14.9C9.08333 15.225 9.08333 15.7583 9.40833 16.0833C9.73333 16.4083 10.2583 16.4083 10.5833 16.0833L16.075 10.5917C16.4 10.2667 16.4 9.74167 16.075 9.41667L10.5917 3.91667C10.2667 3.59167 9.74167 3.59167 9.41667 3.91667C9.09167 4.24167 9.09167 4.76667 9.41667 5.09167L13.475 9.16667H4.16667C3.70833 9.16667 3.33333 9.54167 3.33333 10C3.33333 10.4583 3.70833 10.8333 4.16667 10.8333Z" fill="#92038B"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_114-282-282">
+                            <rect width="20" height="20" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <h3 class="cs-h3">5 Page Professional Website</h3>
+                    <p class="cs-item-text">
+                        Get a complete, polished website with up to five pages—perfect for showcasing your services, telling your story, and converting visitors into customers.
+                    </p>
+                    <span class="cs-fake-link">Read More
+                        <!--Svg Arrow-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_1_114)">
+                            <path d="M4.16667 10.8333H13.475L9.40833 14.9C9.08333 15.225 9.08333 15.7583 9.40833 16.0833C9.73333 16.4083 10.2583 16.4083 10.5833 16.0833L16.075 10.5917C16.4 10.2667 16.4 9.74167 16.075 9.41667L10.5917 3.91667C10.2667 3.59167 9.74167 3.59167 9.41667 3.91667C9.09167 4.24167 9.09167 4.76667 9.41667 5.09167L13.475 9.16667H4.16667C3.70833 9.16667 3.33333 9.54167 3.33333 10C3.33333 10.4583 3.70833 10.8333 4.16667 10.8333Z" fill="#92038B"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_114-282-282">
+                            <rect width="20" height="20" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <h3 class="cs-h3">Website Hosting</h3>
+                    <p class="cs-item-text">
+                        Fast, secure, and reliable hosting included. No need to worry about technical setup or additional fees—we handle everything so your site stays online 24/7.
+                    </p>
+                    <span class="cs-fake-link">Read More
+                        <!--Svg Arrow-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_1_114)">
+                            <path d="M4.16667 10.8333H13.475L9.40833 14.9C9.08333 15.225 9.08333 15.7583 9.40833 16.0833C9.73333 16.4083 10.2583 16.4083 10.5833 16.0833L16.075 10.5917C16.4 10.2667 16.4 9.74167 16.075 9.41667L10.5917 3.91667C10.2667 3.59167 9.74167 3.59167 9.41667 3.91667C9.09167 4.24167 9.09167 4.76667 9.41667 5.09167L13.475 9.16667H4.16667C3.70833 9.16667 3.33333 9.54167 3.33333 10C3.33333 10.4583 3.70833 10.8333 4.16667 10.8333Z" fill="#92038B"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_114-282-282">
+                            <rect width="20" height="20" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <h3 class="cs-h3">24/7 Support</h3>
+                    <p class="cs-item-text">
+                        Questions or issues? We're here whenever you need us. Get prompt responses and solutions so your website never becomes a source of stress.
+                    </p>
+                    <span class="cs-fake-link">Read More
+                        <!--Svg Arrow-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_1_114)">
+                            <path d="M4.16667 10.8333H13.475L9.40833 14.9C9.08333 15.225 9.08333 15.7583 9.40833 16.0833C9.73333 16.4083 10.2583 16.4083 10.5833 16.0833L16.075 10.5917C16.4 10.2667 16.4 9.74167 16.075 9.41667L10.5917 3.91667C10.2667 3.59167 9.74167 3.59167 9.41667 3.91667C9.09167 4.24167 9.09167 4.76667 9.41667 5.09167L13.475 9.16667H4.16667C3.70833 9.16667 3.33333 9.54167 3.33333 10C3.33333 10.4583 3.70833 10.8333 4.16667 10.8333Z" fill="#92038B"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_114-282-282">
+                            <rect width="20" height="20" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <h3 class="cs-h3">Lifetime Updates & Edits</h3>
+                    <p class="cs-item-text">
+                        Your business evolves, and your website should too. Make unlimited changes, updates, and improvements as often as you need—no extra charges, ever.
+                    </p>
+                    <span class="cs-fake-link">Read More
+                        <!--Svg Arrow-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_1_114)">
+                            <path d="M4.16667 10.8333H13.475L9.40833 14.9C9.08333 15.225 9.08333 15.7583 9.40833 16.0833C9.73333 16.4083 10.2583 16.4083 10.5833 16.0833L16.075 10.5917C16.4 10.2667 16.4 9.74167 16.075 9.41667L10.5917 3.91667C10.2667 3.59167 9.74167 3.59167 9.41667 3.91667C9.09167 4.24167 9.09167 4.76667 9.41667 5.09167L13.475 9.16667H4.16667C3.70833 9.16667 3.33333 9.54167 3.33333 10C3.33333 10.4583 3.70833 10.8333 4.16667 10.8333Z" fill="#92038B"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_114-282-282">
+                            <rect width="20" height="20" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <h3 class="cs-h3">Analytics & Growth Support</h3>
+                    <p class="cs-item-text">
+                        While you focus on running your business, we track your website's performance, monitor traffic trends, and provide actionable insights to help you grow. Think of us as your digital partner—always watching, always optimizing.
+                    </p>
+                    <span class="cs-fake-link">Read More
+                        <!--Svg Arrow-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_1_114)">
+                            <path d="M4.16667 10.8333H13.475L9.40833 14.9C9.08333 15.225 9.08333 15.7583 9.40833 16.0833C9.73333 16.4083 10.2583 16.4083 10.5833 16.0833L16.075 10.5917C16.4 10.2667 16.4 9.74167 16.075 9.41667L10.5917 3.91667C10.2667 3.59167 9.74167 3.59167 9.41667 3.91667C9.09167 4.24167 9.09167 4.76667 9.41667 5.09167L13.475 9.16667H4.16667C3.70833 9.16667 3.33333 9.54167 3.33333 10C3.33333 10.4583 3.70833 10.8333 4.16667 10.8333Z" fill="#92038B"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_114-282-282">
+                            <rect width="20" height="20" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <a href="" class="cs-button-solid">Get Started Today</a>
+    </div>
+</section>
+                                
+{% endblock %}
